@@ -3,11 +3,10 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, #00008B, #0000CD); /* Dark blue gradient */
+    animation: moveBackground 20s linear infinite;
     background-attachment: fixed;
-    animation: moveBackground 20s linear infinite; /* Adjust duration as needed */
+    background-size: cover;
 }
 
 /* Keyframes animation for moving the background */
@@ -51,12 +50,12 @@ header nav ul li a {
 }
 
 section {
-    padding: 30px;
-    background: #fff;
-    border-bottom: 1px solid #ddd;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px; /* Reduce padding to shrink the sections */
+    background: rgba(255, 255, 255, 0.8); /* Background with some transparency */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px 20px; /* Increase margin to create more space between sections and sides */
 }
+
 
 footer {
     text-align: center;
@@ -168,11 +167,13 @@ footer {
 }
 
 .about-image {
-    float: right; /* Float the image to the right */
-    margin-left: 20px; /* Add some margin to separate the text from the image */
-    margin-bottom: 20px; /* Add margin at the bottom for spacing */
-    border: 1px solid #000; /* Add a thin black border */
-    border-radius: 80px; /* Round the edges (adjust the value as needed) */
+    float: right;
+    margin-left: 20px;
+    margin-top: -5.5px; /* Adjust this value as needed */
+    width: 475px;
+    height: 475px;
+    border: 2px solid #000;
+    border-radius: 80px;
 }
 
 h2 {
@@ -211,7 +212,7 @@ body, html {
 }
 
 #contact {
-    padding-bottom: 60px;
+    margin-bottom: 100px; /* Add margin at the bottom */
 }
 
 .sticky-header {
