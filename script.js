@@ -49,3 +49,4 @@ function openLightbox(title, description, githubLink) {
 function closeLightbox() {
     document.getElementById('lightbox').style.display = 'none';
 }
+

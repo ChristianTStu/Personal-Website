@@ -3,7 +3,21 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('your-image.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: moveBackground 20s linear infinite; /* Adjust duration as needed */
+}
+
+/* Keyframes animation for moving the background */
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
 }
 
 header {
@@ -29,10 +43,11 @@ header nav ul li a {
 }
 
 section {
-    padding: 20px;
-    margin: 0 20px;
+    padding: 30px; /* Increase the padding for sections */
     background: #fff;
     border-bottom: 1px solid #ddd;
+    padding-left: 20px; /* Add left padding */
+    padding-right: 20px; /* Add right padding */
 }
 
 footer {
@@ -40,6 +55,9 @@ footer {
     padding: 20px;
     background: #333;
     color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Styles for project boxes */
@@ -72,7 +90,6 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-
 
 .project-box h3 {
     margin: 0; /* Remove default margin */
@@ -121,4 +138,80 @@ footer {
     font-size: 30px;
     cursor: pointer;
     color: #333;
+}
+
+#about {
+    padding: 30px; /* Increase the padding for the About section */
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Remove margin from h2 elements within sections */
+section h2 {
+    margin: 0;
+}
+
+/* Remove the thin white backgrounds between sections */
+section + section {
+    margin-top: 0;
+    border-top: none;
+    padding-top: 0;
+}
+
+section {
+    padding: 30px 20px; /* Increase the padding for sections (top and bottom, left and right) */
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/* Remove margin and padding from the body and html elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar if needed */
+    height: 100%;
+}
+
+/* Add this CSS to adjust the Contact section's margin in landscape mode */
+@media (max-width: 800px) and (orientation: landscape) {
+    #contact {
+        margin-bottom: 60px; /* Adjust this value as needed to ensure visibility */
+    }
+}
+
+#contact {
+    padding-bottom: 60px; /* Adjust this value as needed */
+}
+
+/* CSS for sticky header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
