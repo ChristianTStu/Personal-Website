@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url('your-image.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -43,11 +43,11 @@ header nav ul li a {
 }
 
 section {
-    padding: 30px; /* Increase the padding for sections */
+    padding: 30px;
     background: #fff;
     border-bottom: 1px solid #ddd;
-    padding-left: 20px; /* Add left padding */
-    padding-right: 20px; /* Add right padding */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer {
@@ -60,7 +60,6 @@ footer {
     width: 100%;
 }
 
-/* Styles for project boxes */
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -69,7 +68,7 @@ footer {
 }
 
 .project-box {
-    width: 30%; /* Adjust the width as needed */
+    width: 30%;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 15px;
@@ -79,11 +78,10 @@ footer {
     color: black;
     border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    display: flex; /* Make it a flex container */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    flex-direction: column; /* Stack items vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .project-box:hover {
@@ -92,17 +90,15 @@ footer {
 }
 
 .project-box h3 {
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
     .project-box {
         width: 100%;
     }
 }
 
-/* Styles for lightbox */
 .lightbox {
     position: fixed;
     top: 0;
@@ -117,16 +113,15 @@ footer {
 }
 
 .lightbox-content {
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    /* ... other styles ... */
+    box-sizing: border-box;
     background: white;
     padding: 20px;
     border-radius: 5px;
     margin: auto;
-    max-width: 80%; /* Maximum width relative to the viewport width */
-    max-height: 80%; /* Maximum height relative to the viewport height */
+    max-width: 80%;
+    max-height: 80%;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    overflow-y: auto; /* Enable vertical scrolling if content is too long */
+    overflow-y: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -141,13 +136,13 @@ footer {
 }
 
 #about {
-    padding: 30px; /* Increase the padding for the About section */
+    padding: 20px;
 }
 
 .about-container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .about-text {
@@ -155,11 +150,18 @@ footer {
     font-size: 16px;
     line-height: 1.6;
     margin-top: 20px;
-    text-align: left;
 }
 
 .about-text p {
     margin-bottom: 20px;
+}
+
+.about-image {
+    float: right; /* Float the image to the right */
+    margin-left: 20px; /* Add some margin to separate the text from the image */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    border: 1px solid #000; /* Add a thin black border */
+    border-radius: 5px; /* Round the edges (adjust the value as needed) */
 }
 
 h2 {
@@ -168,12 +170,10 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Remove margin from h2 elements within sections */
 section h2 {
     margin: 0;
 }
 
-/* Remove the thin white backgrounds between sections */
 section + section {
     margin-top: 0;
     border-top: none;
@@ -181,31 +181,28 @@ section + section {
 }
 
 section {
-    padding: 30px 20px; /* Increase the padding for sections (top and bottom, left and right) */
+    padding: 30px 20px;
     background: #fff;
     border-bottom: 1px solid #fff;
 }
 
-/* Remove margin and padding from the body and html elements */
 body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Hide horizontal scrollbar if needed */
+    overflow-x: hidden;
     height: 100%;
 }
 
-/* Add this CSS to adjust the Contact section's margin in landscape mode */
 @media (max-width: 800px) and (orientation: landscape) {
     #contact {
-        margin-bottom: 60px; /* Adjust this value as needed to ensure visibility */
+        margin-bottom: 60px;
     }
 }
 
 #contact {
-    padding-bottom: 60px; /* Adjust this value as needed */
+    padding-bottom: 60px;
 }
 
-/* CSS for sticky header */
 .sticky-header {
     position: sticky;
     top: 0;
@@ -214,4 +211,26 @@ body, html {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+}
+
+/* Add this CSS to make the text and image fill the whole width in landscape mode */
+@media (max-width: 800px) and (orientation: landscape) {
+    .about-container {
+        display: flex;
+        flex-direction: column; /* Set flex direction to column */
+        align-items: center; /* Center align items horizontally */
+        text-align: center; /* Center align text */
+    }
+
+    .about-image {
+        width: 80%; /* Adjust the image width as needed */
+        max-width: 100%; /* Ensure it doesn't exceed the container's width */
+        margin: 0 auto; /* Center align the image horizontally */
+        float: none; /* Remove the float */
+    }
+
+    .about-text {
+        width: 80%; /* Adjust the text width as needed */
+        max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    }
 }
