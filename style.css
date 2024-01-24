@@ -161,7 +161,7 @@ footer {
     margin-left: 20px; /* Add some margin to separate the text from the image */
     margin-bottom: 20px; /* Add margin at the bottom for spacing */
     border: 1px solid #000; /* Add a thin black border */
-    border-radius: 5px; /* Round the edges (adjust the value as needed) */
+    border-radius: 80px; /* Round the edges (adjust the value as needed) */
 }
 
 h2 {
