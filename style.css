@@ -88,8 +88,8 @@ footer {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
     z-index: 1000;
 }
 
@@ -99,11 +99,13 @@ footer {
     border-radius: 5px;
     text-align: center;
     max-width: 500px;
-    width: 100%;
+    width: 80%; /* Adjust width as needed */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .close {
     float: right;
     font-size: 30px;
     cursor: pointer;
+    color: #333;
 }
