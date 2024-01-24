@@ -100,13 +100,16 @@ footer {
 }
 
 .lightbox-content {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    /* ... other styles ... */
     background: white;
     padding: 20px;
     border-radius: 5px;
-    max-width: 500px;
-    width: 80%;
+    margin: auto;
+    max-width: 80%; /* Maximum width relative to the viewport width */
+    max-height: 80%; /* Maximum height relative to the viewport height */
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    /* Centering using transform */
+    overflow-y: auto; /* Enable vertical scrolling if content is too long */
     position: absolute;
     top: 50%;
     left: 50%;
