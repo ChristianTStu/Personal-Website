@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Personal Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body >
+<body>
     <div id="page-container">
-    <div class="sticky-header">
-        <header>
+        <div class="sticky-header">
+            <header>
                 <nav>
                     <ul>
                         <li><a href="about.html">About Me</a></li>
@@ -16,25 +17,24 @@
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="my_blog.html">Blog</a></li>
                     </ul>
-                </nav>        
-        </header>
-    </div>
-    
-    <section id="headshot">
-        <div class="alignment">
-            <div class="headline">
-                <div class="outer">
-                    <h2>Hi, I'm Christian Stuart</h2>
-                    <div class="quick-intro">
-                        <p></p>
-                        <p>As a Solutions Engineer with a growing passion for Cybersecurity, I blend my technical expertise and innovative learning to enhance and secure user experiences. My approach is not just about applying existing knowledge, but continuously evolving in the field of cybersecurity to create more intuitive and safe digital interactions.</p>
+                </nav>
+            </header>
+        </div>
+        
+        <section id="headshot">
+            <div class="alignment">
+                <div class="headline">
+                    <div class="outer">
+                        <h2>Hi, I'm Christian Stuart</h2>
+                        <div class="quick-intro">
+                            <p>As a Solutions Engineer with a growing passion for Cybersecurity, I blend my technical expertise and innovative learning to enhance and secure user experiences. My approach is not just about applying existing knowledge, but continuously evolving in the field of cybersecurity to create more intuitive and safe digital interactions.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <img src="Headshot.png" id="headshot-image">
-    </section>
-    
+            <img src="Headshot.png" id="headshot-image" alt="Christian Stuart's Headshot">
+        </section>
+        
         <section id="projects">
             <h2>Projects</h2>
             <div class="project-container">
@@ -44,42 +44,44 @@
                 <div class="project-box" style="background-image: url('project1.jpg');" onclick="openLightbox('Project 2', 'Description of Project 2', 'https://github.com/yourusername/project2')">
                     <h3>Project 2</h3>
                 </div>
-                <div class="project-box" style="background-image: url('project1.jpg');" onclick="openLightbox('Project 3', 'Description of Project 3', 'https://github.com/yourusername/project3')">
+                <div class="project-box" style="background-image: url('project1.jpg');" onclick="openLightbox('Project 2', 'Description of Project 2', 'https://github.com/yourusername/project2')">
                     <h3>Project 3</h3>
                 </div>
-                <div class="project-box" style="background-image: url('project1.jpg');" onclick="openLightbox('Project 4', 'Description of Project 4', 'https://github.com/yourusername/project4')">
+                <div class="project-box" style="background-image: url('project1.jpg');" onclick="openLightbox('Project 2', 'Description of Project 2', 'https://github.com/yourusername/project2')">
                     <h3>Project 4</h3>
                 </div>
-                <div class="project-box" style="background-image: url('project1.jpg');" onclick="openLightbox('Project 5', 'Description of Project 5', 'https://github.com/yourusername/project5')">
+                <div class="project-box" style="background-image: url('project1.jpg');" onclick="openLightbox('Project 2', 'Description of Project 2', 'https://github.com/yourusername/project2')">
                     <h3>Project 5</h3>
                 </div>
-                <!-- Add more project boxes as needed -->
+                <div class="project-box" style="background-image: url('project1.jpg');" onclick="openLightbox('Project 2', 'Description of Project 2', 'https://github.com/yourusername/project2')">
+                    <h3>Project 6</h3>
+                </div>
+                <!-- Add more project boxes with your project details -->
             </div>
         </section>
+        
         <section id="contact">
             <h2>Contact</h2>
-            <p>Feel free to <a href="Christiantstu@gmail.com">email me</a>.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore laboriosam quibusdam iure minima fuga aspernatur similique incidunt corrupti voluptates commodi magnam molestias maxime, odit ipsum autem illo perferendis. Quod, aliquam!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore laboriosam quibusdam iure minima fuga aspernatur similique incidunt corrupti voluptates commodi magnam molestias maxime, odit ipsum autem illo perferendis. Quod, aliquam!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore laboriosam quibusdam iure minima fuga aspernatur similique incidunt corrupti voluptates commodi magnam molestias maxime, odit ipsum autem illo perferendis. Quod, aliquam!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore laboriosam quibusdam iure minima fuga aspernatur similique incidunt corrupti voluptates commodi magnam molestias maxime, odit ipsum autem illo perferendis. Quod, aliquam!</p>
+            <p>Feel free to email me at <a href="mailto:Christiantstu@gmail.com">Christiantstu@gmail.com</a> for any inquiries or collaborations.</p>
+            <p>Let's explore innovative solutions in the ever-evolving world of technology.</p>
+            <p>Address: New Orleans, LA USA</p>
+            <p>Phone: +1 (423) 633-7222</p>
         </section>
 
-    <!-- Lightbox HTML -->
-    <div id="lightbox" class="lightbox" style="display:none;">
-        <div class="lightbox-content">
-            <span class="close" onclick="closeLightbox()">&times;</span>
-            <h3 id="project-title">Project Title</h3>
-            <p id="project-description">Project description goes here...</p>
-            <a id="github-link" href="#" target="_blank"></a>
+        <!-- Lightbox HTML -->
+        <div id="lightbox" class="lightbox" style="display:none;">
+            <div class="lightbox-content">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <h3 id="project-title">Project Title</h3>
+                <p id="project-description">Project description goes here...</p>
+                <a id="github-link" href="#" target="_blank"></a>
+            </div>
         </div>
-    </div>
 
-    <footer>
-        <p>&copy; 2024 My Personal Website</p>
-    </footer>
-
-    <script src="script.js"></script>
+        <footer>
+            <p>&copy; 2024 My Personal Website</p>
+        </footer>
+        <script src="script.js"></script>
     </div>
 </body>
 </html>
