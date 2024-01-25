@@ -1,22 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #00008B, #0000CD); /* Dark blue gradient */
-    animation: moveBackground 20s linear infinite;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-/* Keyframes animation for moving the background */
-@keyframes moveBackground {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 0%;
-    }
+    font-family: 'EB Garamond', serif;
+    /* ... (other styles) */
 }
 
 header {
@@ -50,10 +40,48 @@ header nav ul li a {
 }
 
 section {
-    padding: 10px; /* Reduce padding to shrink the sections */
-    background: rgba(255, 255, 255, 0.8); /* Background with some transparency */
-    border-radius: 10px; /* Rounded corners */
-    margin: 20px 20px; /* Increase margin to create more space between sections and sides */
+    border-bottom: 1px solid #ddd;
+    border-bottom: 0px;
+    max-width: 1600px;
+    margin: 100px;
+
+}
+
+#headshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #f0fffb;
+}
+
+.alignment {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#headshot-image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; /* Adjust the margin as needed */
+    padding-left: 100px;
+    border-radius: 50%;
+}
+
+.headline {
+    text-align: left;
+}
+
+#headshot h2 {
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.quick-intro p {
+    margin: 0;
 }
 
 
@@ -145,59 +173,6 @@ footer {
     color: #333;
 }
 
-#about {
-    padding: 20px;
-}
-
-.about-container {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.about-text {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-top: 20px;
-}
-
-.about-text p {
-    margin-bottom: 20px;
-}
-
-.about-image {
-    float: right;
-    margin-left: 20px;
-    margin-top: -5.5px; /* Adjust this value as needed */
-    width: 475px;
-    height: 475px;
-    border: 2px solid #000;
-    border-radius: 80px;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-section h2 {
-    margin: 0;
-}
-
-section + section {
-    margin-top: 0;
-    border-top: none;
-    padding-top: 0;
-}
-
-section {
-    padding: 30px 20px;
-    background: #fff;
-    border-bottom: 1px solid #fff;
-}
-
 body, html {
     margin: 0;
     padding: 0;
@@ -211,10 +186,6 @@ body, html {
     }
 }
 
-#contact {
-    margin-bottom: 100px; /* Add margin at the bottom */
-}
-
 .sticky-header {
     position: sticky;
     top: 0;
@@ -223,26 +194,4 @@ body, html {
     color: #fff;
     padding: 0;
     text-align: center;
-}
-
-/* Add this CSS to make the text and image fill the whole width in landscape mode */
-@media (max-width: 800px) and (orientation: landscape) {
-    .about-container {
-        display: flex;
-        flex-direction: column; /* Set flex direction to column */
-        align-items: center; /* Center align items horizontally */
-        text-align: center; /* Center align text */
-    }
-
-    .about-image {
-        width: 80%; /* Adjust the image width as needed */
-        max-width: 100%; /* Ensure it doesn't exceed the container's width */
-        margin: 0 auto; /* Center align the image horizontally */
-        float: none; /* Remove the float */
-    }
-
-    .about-text {
-        width: 80%; /* Adjust the text width as needed */
-        max-width: 100%; /* Ensure it doesn't exceed the container's width */
-    }
 }
