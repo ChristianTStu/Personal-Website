@@ -9,6 +9,9 @@ function openLightbox(title, description, githubLink) {
         // Specific content for "Encrypted Communication and Traffic Detection"
         document.getElementById('project-title').textContent = 'Encrypted Communication and Traffic Detection';
         document.getElementById('project-description').innerHTML = `
+        <strong>Repository:</strong> <a href="${githubLink}" target="_blank">GitHub - Encrypted Communication and Traffic Detection</a> <br>
+        <strong>License:</strong> MIT License
+        <strong>Author:</strong> Christian Stuart <strong>Year:</strong> 2023<br>
         <strong>Project Description:</strong>
         <p>This innovative project showcases the implementation of encrypted communication between a client and a server, along with the capability to detect encrypted traffic through network packet analysis. Developed in Python, the project comprises three main scripts, each serving a distinct yet integral role in the demonstration of secure communication and traffic analysis.</p>
         <strong>Key Components:</strong>
@@ -29,10 +32,6 @@ function openLightbox(title, description, githubLink) {
         </ul>
         <strong>Usage Notes:</strong>
         <p>The encryption key is hardcoded for demonstration purposes. Users are advised to implement secure key management practices in real-world applications. The scripts are pre-configured for localhost testing but can be adapted for different network environments. The traffic detection script requires adjustment to the file path based on the user's environment.</p>
-        <strong>Repository:</strong> <a href="${githubLink}" target="_blank">GitHub - Encrypted Communication and Traffic Detection</a>
-        <strong>License:</strong> MIT License
-        <strong>Author:</strong> Christian Stuart
-        <strong>Year:</strong> 2023
         <p>This project is ideal for those interested in network security, encrypted communications, and Python programming. It offers a hands-on approach to understanding and implementing secure communication protocols and network traffic analysis.</p>
         `;
         document.getElementById('github-link').href = githubLink;
