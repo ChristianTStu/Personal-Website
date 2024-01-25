@@ -52,7 +52,22 @@ section {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background: #f0fffb;
+    background: #d4fdf2;
+    margin-bottom: 0;
+}
+
+#projects {
+    background: #d4fdf2;
+    padding: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#contact {
+    padding: 30px;
+    background: #d4fdf2;
+    margin-top: 0;
+    margin
 }
 
 .alignment {
@@ -84,7 +99,6 @@ section {
 .quick-intro p {
     margin: 0;
 }
-
 
 footer {
     text-align: center;
@@ -118,6 +132,19 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+#projects h2 {
+    text-align: left;
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#contact h2 {
+    text-align: left;
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+}
 .project-box h3 {
     margin: 0;
     text-align: center;
@@ -179,12 +206,6 @@ body, html {
     padding: 0;
     overflow-x: hidden;
     height: 100%;
-}
-
-@media (max-width: 800px) and (orientation: landscape) {
-    #contact {
-        margin-bottom: 60px;
-    }
 }
 
 .sticky-header {
