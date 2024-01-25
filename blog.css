@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+
+body {
+    font-family: 'EB Garamond', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    /* ... (other styles) */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 0; /* Reduce padding (adjust as needed) */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem; /* Reduce font size (adjust as needed) */
+}
+
+header nav {
+    margin-left: 50%; /* Push the navigation to the right side */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    border-bottom: 1px solid #ddd;
+    border-bottom: 0px;
+    max-width: 1600px;
+    margin: 100px;
+}
+
+
+footer {
+    display: flex;
+    text-align: center;
+    padding: 0.5rem 0;
+    background: #333;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+}
+
+#latest {
+    padding: 30px;
+    background: #d4fdf2;
+    margin-top: 0px;
+    margin-bottom: 0; /* Add margin-bottom to create space before the footer */
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+#archive {
+    padding: 30px;
+    background: #d4fdf2;
+    margin-top: 0px;
+    margin-bottom: 100px; /* Add margin-bottom to create space before the footer */
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#sticky-footer {
+    padding: 0.5rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #333;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}

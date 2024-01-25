@@ -2,45 +2,67 @@
 <html>
 <head>
     <title>My Blog</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="blog.css">
 </head>
 <body>
-    <header>
-        <h1>My Blog</h1>
-        <nav>
+    <div id="page-container"></div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#latest">Latest Posts</a></li>
+                    <li><a href="#archive">Archived</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="write-blog">
+            <h2>Write a New Blog Post</h2>
+            <form id="blog-form">
+                <textarea id="blog-content" rows="20" cols="235" placeholder="Write your blog post here..."></textarea>
+                <br>
+                <button type="button" id="submit-post">Submit Post</button>
+            </form>
+        </section>
+
+        <!-- New Blog Post Section (hidden by default) -->
+        <section id="new-blog-section" style="display: none;">
+            <h2>Write a New Blog Post</h2>
+            <form id="blog-form">
+                <textarea id="blog-content" rows="4" cols="50" placeholder="Write your blog post here..."></textarea>
+                <br>
+                <button type="button" id="submit-post">Submit Post</button>
+            </form>
+        </section>
+
+        <section id="latest">
+            <h2>Latest Posts</h2>
+            <!-- Example Blog Post -->
+            <article>
+                <h3>Blog Post Title</h3>
+                <p class="date">Posted on January 1, 2024</p>
+                <p>This is a summary of the blog post. <a href="post.html">Read more...</a></p>
+            </article>
+            <!-- You can add more blog posts here -->
+        </section>
+
+        <section id="archive">
+            <h2>Archived</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="#latest">Latest Posts</a></li>
-                <li><a href="#archive">Archived</a></li>
+                <li><a href="post.html">Blog Post Title</a> - January 1, 2024</li>
+                <!-- More archived posts can be listed here -->
             </ul>
-        </nav>
-    </header>
+        </section>
 
-    <section id="latest">
-        <h2>Latest Posts</h2>
-        <!-- Example Blog Post -->
-        <article>
-            <h3>Blog Post Title</h3>
-            <p class="date">Posted on January 1, 2024</p>
-            <p>This is a summary of the blog post. <a href="post.html">Read more...</a></p>
-        </article>
-        <!-- You can add more blog posts here -->
-    </section>
+        <footer id="sticky-footer">
+            <p>&copy; 2024 My Personal Blog</p>
+        </footer>
+    </div>
 
-    <section id="archive">
-        <h2>Archived</h2>
-        <ul>
-            <li><a href="post.html">Blog Post Title</a> - January 1, 2024</li>
-            <!-- More archived posts can be listed here -->
-        </ul>
-    </section>
+    <script src="blog.js"></script>
 
-    <footer>
-        <p>&copy; 2024 My Personal Blog</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
 
