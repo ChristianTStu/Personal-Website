@@ -72,6 +72,22 @@ section {
     border-bottom-left-radius: 50px;
 }
 
+#about {
+    padding: 30px;
+    background: #d4fdf2;
+    margin-top: 100px;
+    margin-bottom: 100px; /* Add margin-bottom to create space before the footer */
+    border-radius: 50px;
+}
+
+#sticky-footer {
+    padding: 50px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+
 .alignment {
     display: flex;
     flex-direction: row-reverse;
@@ -138,6 +154,7 @@ footer {
     text-align: left;
     font-size: 50px;
     padding: 0px;
+    padding-top: 35px;
     margin: 0px;
 }
 
