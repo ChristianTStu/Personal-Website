@@ -49,3 +49,14 @@ function closeLightbox() {
     document.getElementById('lightbox').style.display = 'none';
 }
 
+// Get the copyright text element by its ID
+const copyrightText = document.getElementById('copyright-text');
+
+// Add a click event listener to navigate to the login page
+copyrightText.addEventListener('click', function() {
+    window.location.href = '/html/login.html';
+});
+
+// Add CSS to make the text look clickable and remove the underline
+copyrightText.style.cursor = 'pointer';
+copyrightText.style.textDecoration = 'none'; // Remove the underline
