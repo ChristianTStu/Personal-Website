@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Neutral background for better readability */
+  color: #333; /* Dark grey for text */
+  overflow-x: hidden;
+  height: 100%;
+}
+
+header {
+  background: #1e212d; /* Deep blue shade */
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2rem; /* Larger font size for prominence */
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+section {
+  padding: 50px 5%;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+#resume {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.alignment {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+#headshot-image {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+  padding-left: 100px;
+  border-radius: 50%;
+}
+
+.headline,
+#headshot h2 {
+  text-align: center;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-intro p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+footer {
+  background: #1e212d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+#sticky-footer {
+  padding: 0.5rem 0;
+  position: sticky; /* Changed to sticky to maintain at the bottom */
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 800px) {
+  .alignment {
+    flex-direction: column;
+  }
+  .quick-intro p {
+    font-size: 0.9rem;
+  }
+  #resume {
+    padding: 20px;
+    margin: 20px;
+  }
+}

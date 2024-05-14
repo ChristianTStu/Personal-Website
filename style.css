@@ -1,268 +1,230 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
-
-body {
-    font-family: 'EB Garamond', serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    /* ... (other styles) */
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 0.5rem 0; /* Reduce padding (adjust as needed) */
-    text-align: center;
-}
-
-header h1 {
-    font-size: 1.5rem; /* Reduce font size (adjust as needed) */
-}
-
-header nav {
-    margin-left: 50%; /* Push the navigation to the right side */
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    border-bottom: 1px solid #ddd;
-    border-bottom: 0px;
-    max-width: 1600px;
-    margin: 100px;
-}
-
-#headshot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background: #d4fdf2;
-    margin-bottom: 0;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-}
-
-#projects {
-    background: #d4fdf2;
-    padding: 30px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-#contact {
-    padding: 30px;
-    background: #d4fdf2;
-    margin-top: 0px;
-    margin-bottom: 100px; /* Add margin-bottom to create space before the footer */
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
-
-#about {
-    padding: 30px;
-    background: #d4fdf2;
-    margin-top: 100px;
-    margin-bottom: 100px; /* Add margin-bottom to create space before the footer */
-    border-radius: 50px;
-}
-
-#sticky-footer {
-    padding: 50px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-  }
-
-.alignment {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
-
-#headshot-image {
-    max-width: 100%;
-    height: auto;
-    margin-right: 20px; /* Adjust the margin as needed */
-    padding-left: 100px;
-    border-radius: 50%;
-}
-
-.headline {
-    text-align: left;
-}
-
-#headshot h2 {
-    text-align: center;
-    font-size: 50px;
-    padding: 0px;
-    margin: 0px;
-}
-
-.quick-intro p {
-    margin: 0;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0.5rem 0;
-    background: #333;
-    color: #fff;
-    bottom: 0;
-    width: 100%;
-}
-
-#copyright-text {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.project-box {
-    display: flex;
-    flex-direction: column; /* Stack the image and text vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    width: calc(30% - 20px); /* Adjust width as needed */
-    height: 250px; /* Set a fixed height for the square boxes */
-    background-size: cover; /* Cover the entire box */
-    background-repeat: no-repeat; /* Prevent image from repeating */
-    background-position: center; /* Center the image */
-    border: 1px solid #ddd;
-    margin: 10px;
-    position: relative; /* Add relative positioning to the box */
-    cursor: pointer;
-    color: white; /* Set text color to white for better visibility */
-    border-radius: 5px;
-    overflow: hidden; /* Ensures no overflow of content */
-}
-
-#projects h2 {
-    text-align: left;
-    font-size: 50px;
-    padding: 0px;
-    padding-top: 35px;
-    margin: 0px;
-}
-
-#contact h2 {
-    text-align: left;
-    font-size: 50px;
-    padding: 0px;
-    margin: 0px;
-}
-
-.project-box h3 {
-    position: absolute; /* Absolute positioning relative to the parent */
-    bottom: 0; /* Align at the bottom of the box */
-    width: 100%; /* Full width to center the text */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: white; /* White text color for visibility */
-    text-align: center; /* Center the text horizontally */
-    margin: 0; /* Remove any default margin */
-    padding: 10px 0; /* Padding for better readability */
-}
-
-.project-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 600px) {
-    .project-box {
-        width: 100%;
-    }
-}
-
-.lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.lightbox-content {
-    box-sizing: border-box;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    margin: auto;
-    max-width: 80%;
-    max-height: 80%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    overflow-y: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.close {
-    float: right;
-    font-size: 30px;
-    cursor: pointer;
-    color: #333;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 body,
 html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    height: 100%;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Neutral background for better readability */
+  color: #333; /* Dark grey for text */
+  overflow-x: hidden;
 }
 
-.sticky-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: #333;
-    color: #fff;
-    padding: 0;
-    text-align: center;
+header {
+  background: #1e212d; /* Deep blue shade */
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-#zeroTrustDetails {
-    background-color: #f4f4f4; /* Light grey background */
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+header h1 {
+  font-size: 2rem; /* Larger font size for prominence */
+  margin: 0;
+  padding: 0;
 }
-#zeroTrustDetails ul {
-    list-style-type: none;
-    padding: 0;
+
+header nav {
+  display: inline-block;
+  margin-top: 10px;
 }
-#zeroTrustDetails li {
-    padding: 5px 0;
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+section {
+  padding: 50px 5%;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.project-container {
+  display: flex; /* Makes sure all child elements (.project-box) are flex items */
+  flex-wrap: wrap; /* Allows boxes to wrap onto the next line */
+  justify-content: space-around; /* Distributes space around items */
+  align-items: stretch; /* Stretches items to fill the container vertically */
+  gap: 20px; /* Adds space between each box */
+}
+
+.project-box {
+  flex: 1 0 21%; /* Flex-grow, Flex-shrink, Flex-basis: each box will take roughly 21% of container's width */
+  background-size: cover;
+  background-position: center;
+  position: relative; /* For positioning text absolutely within the box */
+  height: 300px; /* Or whatever height you prefer */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Aligns the text at the bottom */
+  padding: 10px;
+  box-sizing: border-box; /* Includes padding in width and height calculations */
+  color: white; /* Ensures text is white */
+  text-shadow: 1px 1px 2px black; /* Enhances text readability */
+}
+
+.project-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensure there are no extra spaces inside the box */
+}
+
+.project-box h3 {
+  width: 100%; /* Full width of the box */
+  text-align: center; /* Centers the text horizontally */
+  margin: 0; /* Removes default margin */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for better visibility */
+  padding: 10px 0; /* Padding above and below text */
+}
+
+.project-box:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 800px) {
+  .project-box {
+    flex-basis: 100%; /* Each box will take full width of the container on small screens */
+  }
+}
+
+footer {
+  background: #1e212d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+#about-me .container {
+  display: flex;
+  align-items: center; /* Ensures vertical centering */
+  justify-content: space-between; /* Maintains space between text and image */
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  max-width: 1200px; /* Limits the maximum width of the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 40px; /* Adds padding around the contents */
+}
+
+#about-me .text-content {
+  flex: 1 1 60%; /* Takes up 60% of the container */
+  padding-right: 20px; /* Adds some space between the text and the image */
+}
+
+#about-me .image-content {
+  flex: 0 0 35%; /* Takes up 35% of the container, does not grow or shrink */
+  padding: 10px; /* Adds padding around the image */
+}
+
+#about-me .image-content img {
+  width: 100%; /* Makes the image fully responsive within its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: Rounds the corners of the image */
+}
+
+@media (max-width: 800px) {
+  #about-me .container {
+    flex-direction: column; /* Stacks the text and image vertically on small screens */
+  }
+
+  #about-me .text-content,
+  #about-me .image-content {
+    flex: 1 1 100%; /* Each takes full width of the container */
+    text-align: center; /* Centers text for a cleaner look on small screens */
+  }
+
+  #about-me .image-content {
+    order: -1; /* Places the image above the text */
+    padding: 0 0 20px 0; /* Adds padding below the image */
+  }
+}
+
+@media (max-width: 800px) {
+  .project-box {
+    width: 100%;
+  }
+}
+
+.lightbox {
+  position: fixed;
+  top: 0; /* Cover the entire viewport */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Adds shadow for depth */
+  border-radius: 10px; /* Optional: Rounds the corners */
+}
+
+.lightbox-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px; /* Rounds the corners of the content box */
+  max-width: 1200px; /* Maximum width, adjust as needed */
+  max-height: 800px; /* Maximum height, adjust as needed */
+  width: 90%; /* Width relative to the parent */
+  height: 80%; /* Height relative to the parent */
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centers the content within the lightbox */
+  overflow: auto; /* Allows scrolling if content is larger than the box */
+}
+
+@media (max-width: 600px) {
+  .lightbox-content {
+    width: 95%; /* Almost full width */
+    height: 90%; /* Almost full height */
+    padding: 10px; /* Less padding to save space */
+  }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
 }
