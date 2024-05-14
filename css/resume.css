@@ -115,61 +115,123 @@ footer {
   left: 0;
 }
 
+/* Responsive adjustments for smaller screens */
+@media (max-width: 800px) {
+  .alignment {
+    flex-direction: column;
+  }
+  .quick-intro p {
+    font-size: 0.9rem;
+  }
+  #resume {
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
+/* Skills and Tools section */
 .skills-tools-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px; /* Adjusts spacing between the sections */
-  padding: 20px;
-  background: #fff; /* White background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a clean look */
-  border-radius: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Ensures the items wrap on smaller screens */
 }
 
 .skills-section,
 .tools-section {
   flex: 1;
-  min-width: 300px;
-}
-
-.skills-section h5,
-.tools-section h5,
-.tools-category h6 {
-  font-weight: bold;
-  color: #333; /* Dark grey color for headings */
-  margin-bottom: 15px;
-}
-
-.skills-section h5,
-.tools-section h5 {
-  text-align: left; /* Align skills and tools headings to the left */
+  min-width: 250px; /* Ensures the sections don't get too narrow */
+  margin: 10px;
+  padding: 15px; /* Add padding inside the sections */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
 }
 
 .skill-icons,
-.tools-category div {
+.tools-category {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Adjusts spacing between the badges */
+  gap: 10px; /* Space between badges */
 }
 
 .skill-icons img,
 .tools-category img {
-  height: auto;
+  margin: 5px 0; /* Vertical spacing between badges */
+}
+
+.skill-icons img {
+  margin-left: 0; /* Ensure left alignment for skill icons */
+}
+
+.tools-category div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between badges */
+}
+
+.tools-category img {
+  margin-left: 0; /* Ensure left alignment for tool icons */
+}
+
+/* Certifications section */
+#certifications {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.certifications-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Ensures the items wrap on smaller screens */
+}
+
+.certifications-section,
+.in_progress-section {
+  flex: 1;
+  min-width: 250px; /* Ensures the sections don't get too narrow */
+  margin: 10px;
+  padding: 15px; /* Add padding inside the sections */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.certifications-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between badges */
+}
+
+.certifications-icons img {
+  margin: 5px 0; /* Vertical spacing between badges */
+}
+
+.certifications-section h4,
+.in_progress-section h4 {
+  margin-top: 0; /* Remove the top margin */
+  margin-bottom: 10px; /* Add a bit of space below the heading */
 }
 
 @media (max-width: 800px) {
-  .skills-tools-container {
+  .certifications-container {
     flex-direction: column;
     gap: 20px; /* Smaller gap on mobile */
   }
 
-  .skills-section h5,
-  .tools-section h5 {
+  .certifications-section h4,
+  .in_progress-section h4 {
     text-align: center; /* Center align headings on mobile */
   }
 
-  .skill-icons,
-  .tools-category div {
+  .certifications-icons {
     justify-content: center; /* Center align badges on mobile */
   }
 }
+
