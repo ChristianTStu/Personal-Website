@@ -228,3 +228,53 @@ footer {
   cursor: pointer;
   color: #333;
 }
+
+#contact {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 30px 0;
+}
+
+#contact h2 {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}

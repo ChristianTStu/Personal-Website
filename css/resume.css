@@ -97,22 +97,27 @@ section {
   line-height: 1.6;
 }
 
-footer {
+footer, #sticky-footer {
   background: #1e212d;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
-  position: sticky;
-  bottom: 0;
   width: 100%;
+  position: fixed; /* Make footer stick to the bottom */
+  bottom: 0;
+  left: 0;
+  margin: 0;
 }
 
 #sticky-footer {
   padding: 0.5rem 0;
-  position: sticky; /* Changed to sticky to maintain at the bottom */
-  bottom: 0;
-  width: 100%;
-  left: 0;
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 60px; /* Ensure content is not hidden behind the footer */
 }
 
 /* Responsive adjustments for smaller screens */
@@ -235,3 +240,55 @@ footer {
   }
 }
 
+#contact {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 30px 0;
+  width: 100%; /* Ensure the section takes full width */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  max-width: none; /* Override any max-width settings */
+}
+
+#contact h2 {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}
