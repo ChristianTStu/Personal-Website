@@ -3,27 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Function to open the lightbox with project details
-function openLightbox(title, description, githubLink) {
-  if (title === "Encrypted Communication and Traffic Detection") {
-    // Specific content handling for "Encrypted Communication and Traffic Detection"
-    document.getElementById("project-title").textContent = title;
-    document.getElementById("project-description").innerHTML = `
-        <strong>Repository:</strong> <a href="${githubLink}" target="_blank">GitHub - Encrypted Communication and Traffic Detection</a> <br>
-        <strong>License:</strong> MIT License <br>
-        <strong>Author:</strong> Christian Stuart <br>
-        <strong>Year:</strong> 2023<br>
-        <strong>Project Description:</strong>
-        <p>This innovative project showcases the implementation of encrypted communication between a client and a server, along with the capability to detect encrypted traffic through network packet analysis. Developed in Python, the project comprises three main scripts, each serving a distinct yet integral role in the demonstration of secure communication and traffic analysis.</p>
-        <!-- Further content -->
-        `;
-  } else {
-    // Generic handling for other projects
-    document.getElementById("project-title").textContent = title;
-    document.getElementById("project-description").textContent = description;
-  }
-  document.getElementById("github-link").href = githubLink;
-  document.getElementById("lightbox").style.display = "block";
+function openGitHub(githubLink) {
+  window.open(githubLink);
 }
+
 
 // Function to close the lightbox
 function closeLightbox() {

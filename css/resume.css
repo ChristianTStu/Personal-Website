@@ -239,7 +239,6 @@ footer, #sticky-footer {
     justify-content: center; /* Center align badges on mobile */
   }
 }
-
 #contact {
   background-color: #f9f9f9;
   padding: 40px 20px;
@@ -291,4 +290,18 @@ footer, #sticky-footer {
 
 .social-media img:hover {
   transform: scale(1.2);
+}
+
+/* Center-align the h1 element */
+h1 {
+  font-size: 3rem;
+  text-align: center; /* Center-align the text */
+  margin: 0 auto; /* Center-align the element itself */
+}
+
+/* Ensure the container is also centered and full width */
+.resume-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
