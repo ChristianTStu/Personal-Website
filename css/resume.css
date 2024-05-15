@@ -206,6 +206,8 @@ footer, #sticky-footer {
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
   text-align: center; /* Center align text */
+  min-height: 220px; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
 }
 
 .certifications-icons {
@@ -225,7 +227,7 @@ footer, #sticky-footer {
 
 /* Specific styles for the "In Progress" section */
 .certifications-section:nth-child(2) .certifications-icons {
-  gap: 25px; /* Adjust the gap between images */
+  gap: 27px; /* Adjust the gap between images */
 }
 
 /* Specific styles for the "In Progress" section images */
@@ -242,6 +244,10 @@ footer, #sticky-footer {
   .certifications-container {
     flex-direction: column;
     gap: 20px; /* Smaller gap on mobile */
+  }
+
+  .certifications-section {
+    height: auto; /* Remove fixed height on mobile */
   }
 
   .certifications-section h4 {
