@@ -193,33 +193,47 @@ footer, #sticky-footer {
 .certifications-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center; /* Center align vertically */
   flex-wrap: wrap; /* Ensures the items wrap on smaller screens */
 }
 
-.certifications-section,
-.in_progress-section {
+.certifications-section {
   flex: 1;
   min-width: 250px; /* Ensures the sections don't get too narrow */
   margin: 10px;
   padding: 15px; /* Add padding inside the sections */
-  border: 1px solid #ddd; /* Light grey border */
+  border: 5px solid #696969; /* Light grey border */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  text-align: center; /* Center align text */
 }
 
 .certifications-icons {
   display: flex;
+  justify-content: center; /* Center align horizontally */
   flex-wrap: wrap;
   gap: 10px; /* Space between badges */
 }
 
 .certifications-icons img {
-  margin: 5px 0; /* Vertical spacing between badges */
+  max-width: 150px; /* Set a maximum width */
+  max-height: 150px; /* Set a maximum height */
+  object-fit: contain; /* Maintain aspect ratio and fit within the box */
+  margin: 5px; /* Equal margin around badges */
+  transition: transform 0.2s; /* Smooth transformation */
 }
 
-.certifications-section h4,
-.in_progress-section h4 {
+/* Specific styles for the "In Progress" section */
+.certifications-section:nth-child(2) .certifications-icons {
+  gap: 25px; /* Adjust the gap between images */
+}
+
+/* Specific styles for the "In Progress" section images */
+.certifications-section:nth-child(2) .certifications-icons img {
+  transform: scale(1.4); /* Scale the images */
+}
+
+.certifications-section h4 {
   margin-top: 0; /* Remove the top margin */
   margin-bottom: 10px; /* Add a bit of space below the heading */
 }
@@ -230,8 +244,7 @@ footer, #sticky-footer {
     gap: 20px; /* Smaller gap on mobile */
   }
 
-  .certifications-section h4,
-  .in_progress-section h4 {
+  .certifications-section h4 {
     text-align: center; /* Center align headings on mobile */
   }
 
@@ -239,6 +252,7 @@ footer, #sticky-footer {
     justify-content: center; /* Center align badges on mobile */
   }
 }
+
 #contact {
   background-color: #f9f9f9;
   padding: 40px 20px;
