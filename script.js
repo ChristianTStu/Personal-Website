@@ -17,11 +17,11 @@ function openZeroTrustList() {
   var content = `
         <ul>
             <li><a href="https://github.com/ChristianTStu/WireGuard-Zero-Trust-Architecture-Exercise">WireGuard Exercise</a></li>
-            <li><a href="https://github.com/ChristianTStu/ZeroTier-Exercise">ZeroTier Exercise</a></li>
-            <li><a href="https://github.com/ChristianTStu/Cloudflare-Migration-Exercise">Cloudflare Migration Exercise</a></li>
-            <li><a href="https://github.com/ChristianTStu/Cloudflare-Service-to-Service-Access-Exercise">Cloudflare Service to Service Access Exercise</a></li>
-            <li><a href="https://github.com/ChristianTStu/ThreatLocker-Exercise">ThreatLocker Exercise</a></li>
-            <li><a href="https://github.com/ChristianTStu/BitWarden-SSH-Secret-Handling-Exercise">BitWarden & SSH Secret Handling Exercise</a></li>
+            <li><a href="https://github.com/ChristianTStu/ZeroTier-Software-Switched-Network-Exercise">ZeroTier Exercise</a></li>
+            <li><a href="https://github.com/ChristianTStu/Cloudflare-Zero-Trust-Migration-Exercise">Cloudflare Migration Exercise</a></li>
+            <li><a href="https://github.com/ChristianTStu/Cloudflare-Zero-Trust-Service-to-Service-Access-Exercise">Cloudflare Service to Service Access Exercise</a></li>
+            <li><a href="https://github.com/ChristianTStu/ThreatLocker-Network-Access-Control-Policy-Configuration-Exercise">ThreatLocker Exercise</a></li>
+            <li><a href="https://github.com/ChristianTStu/Bitwarden-Secrets-Management-and-SSH-Key-Handling-Exercise">BitWarden & SSH Secret Handling Exercise</a></li>
         </ul>
     `;
   document.getElementById("project-title").textContent =
